@@ -241,7 +241,7 @@ function tTest () {
 	if (tValue > tComp) {
 		alert("These samples are statistically different.");
 		alert("Here's your work.");
-		alert("Your data set is named " + dataNamed + ". Your control mean is " + cMean + ", and your test mean is " + tMean + ". \n Your control standard deviation is " + cSTD + ", and your test standard deviation is " + tSTD + ". \n Your control has " + cNum + " data points, and your test has " + tNum + " of data points.");
+		alert("Your data set is named " + dataName + ". Your control mean is " + cMean + ", and your test mean is " + tMean + ". \n Your control standard deviation is " + cSTD + ", and your test standard deviation is " + tSTD + ". \n Your control has " + cNum + " data points, and your test has " + tNum + " of data points.");
 		if (cMean > tMean) {
 			alert("Copy the below if you have to show your work: \n Subtracted Xs: " + cMean + "-" + tMean + "=" + eMean  + "\n Var(control): " + cSTD + "/" + cNum + "=" + dividedCSTD + "\n Var(test): " + tSTD + "/" + tNum + "=" + dividedTSTD + "\n " + dividedCSTD + "+" + dividedTSTD + "=" + addedSTD + "\n The square root of " + dividedTSTD + " is " + rootSTD + ". \n " + eMean + "/" + rootSTD + "=" + tValue + "\n The tValue is " + tValue + " . The t comparison value is " + tComp + ". These pairs are statistically different.");
 		} else if (cMean < tMean) {
@@ -259,7 +259,7 @@ function tTest () {
 	} else if (tValue == tComp) {
 		alert("Your tValue is equal to your tComp. I do not know what this means, sorry.");
 		alert("Here's your work.");
-		alert("Your data set is named " + dataNamed + ". Your control mean is " + cMean + ", and your test mean is " + tMean + ". \n Your control standard deviation is " + cSTD + ", and your test standard deviation is " + tSTD + ". \n Your control has " + cNum + " data points, and your test has " + tNum + " of data points.");
+		alert("Your data set is named " + dataName + ". Your control mean is " + cMean + ", and your test mean is " + tMean + ". \n Your control standard deviation is " + cSTD + ", and your test standard deviation is " + tSTD + ". \n Your control has " + cNum + " data points, and your test has " + tNum + " of data points.");
 		if (cMean > tMean) {
 			alert("Copy the below if you have to show your work: \n Subtracted Xs: " + cMean + "-" + tMean + "=" + eMean  + "\n Var(control): " + cSTD + "/" + cNum + "=" + dividedCSTD + "\n Var(test): " + tSTD + "/" + tNum + "=" + dividedTSTD + "\n " + dividedCSTD + "+" + dividedTSTD + "=" + addedSTD + "\n The square root of " + dividedTSTD + " is " + rootSTD + ". \n " + eMean + "/" + rootSTD + "=" + tValue + "\n The tValue is " + tValue + " . The t comparison value is " + tComp + ". I do not know.");
 		} else if (cMean < tMean) {
